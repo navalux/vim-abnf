@@ -5,6 +5,8 @@ if exists('b:current_syntax')
   finish
 endif
 
+setlocal iskeyword+=-
+
 syn keyword abnfCommentTodo TODO FIXME TBD XXX NOTE contained
 syn match   abnfComment     /;.*$/ contains=abnfCommentTodo
 
